@@ -1,0 +1,103 @@
+header {
+  display: flex;
+  height: auto;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: white;
+  top: 0;
+  position: fixed;
+  z-index: 10;
+}
+
+h1 {
+  gap: 10px;
+  padding: 10px;
+  color: var(--red);
+  cursor: pointer;
+}
+
+header div {
+  display: flex;
+  height: auto;
+  width: 100%;
+  padding: 20px;
+  gap: 2px;
+}
+
+#searchInput {
+  border-radius: 10px;
+  width: 70%;
+  padding: 10px;
+  background-color: var(--primary);
+}
+
+#numPhotos {
+  border-radius: 10px;
+}
+
+#searchButton {
+  border-radius: 15px;
+  padding: 10px;
+  width: auto;
+  height: 40px;
+}
+
+#Profile {
+  padding: 10px 15px;
+  gap: 10px;
+  border-radius: 15px;
+  position: absolute;
+  right: 20px;
+  height: auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#selectOptions {
+  display: flex;
+  position: absolute;
+  background-color: var(--primary);
+  border: 1px var(--secondary) solid;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  margin-top: 45px;
+  right: 0;
+  width: auto;
+  display: none;
+}
+
+#selectOptions > p {
+  font-size: 12px;
+  text-align: left;
+  margin: 5px;
+}
+
+.select-option {
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 15px;
+  text-align: left;
+}
+
+.select-option:hover {
+  background-color: var(--secondary);
+}
+
+@media (max-width: 768px) {
+  h1 {
+    display: none;
+  }
+
+  header div {
+    width: 80%;
+    gap: 5px;
+  }
+  #Profile {
+    height: 40px;
+    align-items: center;
+    text-align: center;
+  }
+}
